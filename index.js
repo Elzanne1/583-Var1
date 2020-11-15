@@ -94,7 +94,7 @@ function getCountryImageInfo(jsonData, csvData){
                 let abbrev = key;
                 let a = abbrev.toLowerCase();
                 let temp = {'name': name, 'code': abbrev, 'life_expectancy': d['Life expectancy '], 'bmi': d[' BMI '],
-                'gdp': d['GDP'], 'income_resources': d['Income composition of resources'], 'schooling': d['Schooling'], 'location' : `https://github.com/Elzanne1/583-Var1/tree/master/svg/${a}.svg`};
+                'gdp': d['GDP'], 'income_resources': d['Income composition of resources'], 'schooling': d['Schooling'], 'location' : `./images/${a}.svg`};
                 data.push(temp);
             }
         }
