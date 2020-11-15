@@ -93,7 +93,7 @@ function getCountryImageInfo(jsonData, csvData){
             if (jsonData[key].trim() === name){
                 let abbrev = key;
                 let temp = {'name': name, 'code': abbrev, 'life_expectancy': d['Life expectancy '], 'bmi': d[' BMI '],
-                'gdp': d['GDP'], 'income_resources': d['Income composition of resources'], 'schooling': d['Schooling'], 'location' : `./svg/${abbrev}.svg`};
+                'gdp': d['GDP'], 'income_resources': d['Income composition of resources'], 'schooling': d['Schooling'], 'location' : `https://github.com/Elzanne1/583-Var1/tree/master/svg/${abbrev}.svg`};
                 data.push(temp);
             }
         }
