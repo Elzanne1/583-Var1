@@ -1,0 +1,68 @@
+
+body{
+    background-color:lightgray;
+    overflow-y: auto;
+    padding-bottom: 3%;
+}
+
+h3{
+    padding: 2%;
+    text-align:center;
+}
+
+#wrapper_upper, #wrapper_lower{
+    width:100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+#wrapper_upper{
+    padding-top: 2%;
+    height: 17%;
+}
+
+#wrapper_lower{
+    height: 83%;
+}
+
+#upper_scroll{
+    width: 300%;
+    height:100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+#vis_container{
+    padding-top: 2%;
+    width: 300%;
+    height: 100%;
+    overflow:auto;
+}
+
+span{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+#plus{
+    float:left;
+    padding-left:2%;
+    color: #00d700;
+    font-size: 3em;
+}
+
+#minus{
+    float:right;
+    padding-right: 2%;
+    color: #ff4646;
+    font-size:3em;
+
+}
+
+h1,h2{
+    text-align:center;
+}
+
+
+
+
+

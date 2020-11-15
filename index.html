@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VisTwo: ListVis</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+</head>
+<body>
+
+	<p>In this original design, every country has a line, and the flag is positioned based on the country’s rank in an ordered list of the relevant data. When ‘Life Expectancy Data’ is selected, for example, this ranking is done using the life expectancy column in the original data set. The leftmost country flag is the country with the highest value in the given data column. The green ‘plus’ sign and red ‘minus’ sign is meant to indicate this to the viewer.</p>
+
+
+	<div id = "outer_container" class = "container">
+		<div class="row">
+			<header class="jumbotron">
+				<div class = "container">
+					<h1>The Factors That Influence Life Expectancy</h1>
+					<h2>All data represents the average value in the year 2015</h2>
+				</div>
+
+			</header>
+		</div>
+
+		<div class = "row d-flex" id="button_row" >
+			<div class = "col-xs-2 text-center">
+				<button id = "LE" class = "btn btn-primary">Life Expectancy Data</button>
+			</div>
+
+			<div class = "col-xs-2 text-center">
+				<button id = "BMI" class = "btn btn-primary">BMI Data</button>
+			</div>
+
+			<div class = "col-xs-2 text-center">
+				<button id = "GDP" class = "btn btn-primary">GDP Data</button>
+			</div>
+
+			<div class = "col-xs-4 text-center">
+				<button id = "IC" class = "btn btn-primary">Income Composition of Resources Data</button>
+			</div>
+
+			<div class = "col-xs-2 text-center">
+				<button id = "S" class = "btn btn-primary">Schooling Data</button>
+			</div>
+
+		</div>
+
+		<div>
+			<h3 id = "info"></h3>
+		</div>
+
+		<span id="plus" class = "glyphicon glyphicon-plus"></span>
+		<span id = "minus" class="glyphicon glyphicon-minus"></span>
+
+		<div id = "wrapper_upper">
+			<div id = "upper_scroll"></div>
+		</div>
+
+		<div id = "wrapper_lower">
+			<div id = "vis_container" class = "container" ></div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
